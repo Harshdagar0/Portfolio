@@ -29,7 +29,7 @@ function ContactForm() {
         errors={state.errors}
       /><br></br>
       <textarea
-        className='bg-transparent  border-b my-2 w-full h-20' 
+        className='bg-transparent  border-b my-2 w-full h-32 h-20' 
         placeholder="Question, request assistance, or give feedback on your experience "
         id="message"
         name="message"

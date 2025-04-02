@@ -26,7 +26,7 @@ function Contact() {
                  className='lg:px-20 lg:w-1/2 text-center px-4 pt-4 lg:text-start'>
                     <p>Email : <span className='text-slate-400'>dagarh89@gmail.com</span></p>
                     <p>Phone no : +91 9990728546</p>
-                    <p>Address : H.No 383,Near baba Haridas,Jhroda Kalan,Najafgarh,New Delhi - 110072</p>
+                    <p>Address : H.No 383,Near baba Haridas,Jharoda Kalan,Najafgarh,New Delhi - 110072</p>
                 </motion.div>
 
             </div>
