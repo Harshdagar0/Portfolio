@@ -16,7 +16,7 @@ function Project() {
                  whileInView={{opacity:1,x:0}}
                  transition={{duration:1,delay:0.6}}
                  className='lg:w-1/2 text-2xl text-center pt-4 pb-2'>
-                    <a href='https://doctor-appointment-nu-one.vercel.app/'  target="_blank"> Book Appointment  </a>
+                    <a href='https://doctor-appointment-sigma-ruby.vercel.app/'  target="_blank"> Book Appointment  </a>
                 </motion.div>
                 <div className='lg:w-1/2 lg:pe-20'>
                      
