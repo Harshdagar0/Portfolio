@@ -13,7 +13,7 @@ import { motion } from "motion/react"
 
 function Skill() {
     return (
-        <div className='container my-10 lg:px-80 px-10'>
+        <div className=' my-10 lg:px-80 px-10'>
             <motion.h1 
              initial={{y:-20,opacity:0}}
              whileInView={{opacity:1,y:0}}

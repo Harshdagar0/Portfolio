@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 function About() {
     return (
-        <div className='container mb-10 mt-20 px-7'>
+        <div className=' mb-10 mt-20 px-7'>
             <motion.h1 
             initial={{y:-20,opacity:0}}
             whileInView={{opacity:1,y:0}}
