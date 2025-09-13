@@ -34,12 +34,12 @@ function Experience() {
                      whileInView={{opacity:1,y:0}}
                      transition={{duration:1,delay:0.6}}
                       className='text-center lg:text-start pt-4'>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>HTML</span>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>CSS</span>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>JS</span><br></br><br></br>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Bootstrap</span>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Wordpess</span>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Shopify</span>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>HTML</span>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>CSS</span>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>JS</span><br></br><br></br>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>Bootstrap</span>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>Wordpess</span>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>Shopify</span>
                     </motion.div>
                 </div>
             </div>
@@ -68,9 +68,9 @@ function Experience() {
                      whileInView={{opacity:1,y:0}}
                      transition={{duration:1,delay:0.6}}
                       className='text-center lg:text-start pt-4'>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>React.js</span>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Tailwind CSS</span><br></br><br></br>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Javascript</span>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>React.js</span>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>Tailwind CSS</span><br></br><br></br>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>Javascript</span>
                     </motion.div>
                 </div>
             </div>
@@ -100,9 +100,9 @@ function Experience() {
                      whileInView={{opacity:1,y:0}}
                      transition={{duration:1,delay:0.6}}
                       className='text-center lg:text-start pt-4'>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>HTML</span>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>CSS</span>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Javascript</span>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>HTML</span>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>CSS</span>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>Javascript</span>
                     </motion.div>
                 </div>
             </div>

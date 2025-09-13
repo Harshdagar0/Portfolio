@@ -30,12 +30,12 @@ function Project() {
                     initial={{y:10,opacity:0}}
                     transition={{duration:1,delay:0.6}}
                     className='text-center lg:text-start'>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>React</span>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Tailwind CSS</span>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Javascript</span><br></br><br></br>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Node</span>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Express</span>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>MongoDB</span>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>React</span>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>Tailwind CSS</span>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>Javascript</span><br></br><br></br>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>Node</span>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>Express</span>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>MongoDB</span>
                     </motion.div>
                 </div>
             </div>
@@ -64,12 +64,12 @@ function Project() {
                     whileInView={{opacity:1,y:0}}
                     transition={{duration:1,delay:0.6}}                    
                     className='text-center lg:text-start'>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>React</span>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Bootstrap</span>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Javascript</span><br></br><br></br>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Node</span>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Express</span>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>MongoDb</span>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>React</span>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>Bootstrap</span>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>Javascript</span><br></br><br></br>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>Node</span>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>Express</span>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>MongoDb</span>
                     </motion.div>
                 </div>
             </div>
@@ -97,12 +97,12 @@ function Project() {
                     initial={{y:10,opacity:0}}
                     transition={{duration:1,delay:0.6}}
                     className='text-center lg:text-start'>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>EJS</span>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>CSS</span>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Bootstrap</span><br></br><br></br>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Javascript</span>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Node</span>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Express</span>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>EJS</span>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>CSS</span>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>Bootstrap</span><br></br><br></br>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>Javascript</span>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>Node</span>
+                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>Express</span>
                     </motion.div>
                 </div>
             </div>
