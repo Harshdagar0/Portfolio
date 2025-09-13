@@ -66,8 +66,8 @@ function Project() {
                     className='text-center lg:text-start'>
                         <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>React</span>
                         <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Bootstrap</span>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Javascript</span>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Node</span><br></br><br></br>
+                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Javascript</span><br></br><br></br>
+                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Node</span>
                         <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Express</span>
                         <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>MongoDb</span>
                     </motion.div>
@@ -99,8 +99,8 @@ function Project() {
                     className='text-center lg:text-start'>
                         <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>EJS</span>
                         <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>CSS</span>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Bootstrap</span>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Javascript</span><br></br><br></br>
+                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Bootstrap</span><br></br><br></br>
+                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Javascript</span>
                         <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Node</span>
                         <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Express</span>
                     </motion.div>

@@ -9,35 +9,37 @@ function Experience() {
             whileInView={{opacity:1,y:0}}
             transition={{duration:0.5,delay:0.3}}
              className='text-4xl text-center mb-10'>Experience</motion.h1>
-            <div className='lg:flex'>
+          
+            <div className='lg:flex mt-10'>
                 <motion.div
                 initial={{x:-20,opacity:0}}
                 whileInView={{opacity:1,x:0}}
                 transition={{duration:1,delay:0.6}}
                 className='lg:w-1/2 text-center pt-4 pb-2'>
-                    June 2024 - July 2024
+                    Jun 2025 - Aug 2025
                 </motion.div>
                 <div className='lg:w-1/2 lg:pe-20 '>
                     <motion.h1 
                       initial={{x:20,opacity:0}}
                       whileInView={{opacity:1,x:0}}
                       transition={{duration:1,delay:0.6}}
-                     className='lg:text-xl text-center lg:text-start'>Front-end Developer(Intern)  -GO BUSINESS INDIA</motion.h1>
+                     className='lg:text-xl text-center lg:text-start'>Front-end Developer(Intern) - NexGen Innovators </motion.h1>
                     <motion.p 
                      initial={{x:20,opacity:0}}
                      whileInView={{opacity:1,x:0}}
-                     transition={{duration:1,delay:0.6}}
-                    
-                     className='text-slate-400 px-4 lg:px-0 text-center lg:text-start mb-3'>In Go business india, I worked on 3 projects, one was their
-                      client's project and other two was clone of Myntra and MakeMyTrip</motion.p>
-                    <motion.div
+                     transition={{duration:1,delay:0.6}}                    
+                     className='text-slate-400 px-4 lg:px-0 text-center lg:text-start mb-3'>I have worked on several projects in my NextGen internship related to WordPress and Shopify. In WordPress, I created new pages, used several plugins . In Shopify, I created sections and blocks, added products, and performed MS, VT, and SPU testing on WordPress projects. I also deployed some projects with the help of Hostinger.</motion.p>
+                          <motion.div
                      initial={{y:10,opacity:0}}
                      whileInView={{opacity:1,y:0}}
                      transition={{duration:1,delay:0.6}}
                       className='text-center lg:text-start pt-4'>
                         <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>HTML</span>
                         <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>CSS</span>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Javascript</span>
+                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>JS</span><br></br><br></br>
+                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Bootstrap</span>
+                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Wordpess</span>
+                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Shopify</span>
                     </motion.div>
                 </div>
             </div>
@@ -67,7 +69,39 @@ function Experience() {
                      transition={{duration:1,delay:0.6}}
                       className='text-center lg:text-start pt-4'>
                         <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>React.js</span>
-                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Tailwind CSS</span>
+                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Tailwind CSS</span><br></br><br></br>
+                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Javascript</span>
+                    </motion.div>
+                </div>
+            </div>
+              <div className='lg:flex mt-10'>
+                <motion.div
+                initial={{x:-20,opacity:0}}
+                whileInView={{opacity:1,x:0}}
+                transition={{duration:1,delay:0.6}}
+                className='lg:w-1/2 text-center pt-4 pb-2'>
+                    June 2024 - July 2024
+                </motion.div>
+                <div className='lg:w-1/2 lg:pe-20 '>
+                    <motion.h1 
+                      initial={{x:20,opacity:0}}
+                      whileInView={{opacity:1,x:0}}
+                      transition={{duration:1,delay:0.6}}
+                     className='lg:text-xl text-center lg:text-start'>Front-end Developer(Intern)  -GO BUSINESS INDIA</motion.h1>
+                    <motion.p 
+                     initial={{x:20,opacity:0}}
+                     whileInView={{opacity:1,x:0}}
+                     transition={{duration:1,delay:0.6}}
+                    
+                     className='text-slate-400 px-4 lg:px-0 text-center lg:text-start mb-3'>In Go business india, I worked on 3 projects, one was their
+                      client's project and other two was clone of Myntra and MakeMyTrip</motion.p>
+                    <motion.div
+                     initial={{y:10,opacity:0}}
+                     whileInView={{opacity:1,y:0}}
+                     transition={{duration:1,delay:0.6}}
+                      className='text-center lg:text-start pt-4'>
+                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>HTML</span>
+                        <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>CSS</span>
                         <span className='border py-1 px-2 rounded text-purple-800 bg-neutral-900 mx-2 '>Javascript</span>
                     </motion.div>
                 </div>
