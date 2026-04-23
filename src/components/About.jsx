@@ -22,10 +22,13 @@ function About() {
             transition={{ duration: 0.45, delay: 0.1 }}
             className='leading-7 text-zinc-300'
           >
-            Hi, I am Harsh Dagar. I specialize in the MERN stack and also have knowledge of other programming
-            languages like C++ and JavaScript. I am pursuing BCA from Trinity Institute of Professional Studies.
-            I have worked as a frontend intern at Go Business India. I love playing video games like BGMI.
-            Let&apos;s connect and create something extraordinary together.
+            Hi, I&apos;m Harsh Dagar, a Full Stack Developer with a strong focus on the MERN stack. I completed
+            my BCA in 2025 from Trinity Institute of Professional Studies and am currently working as a
+            Node.js Developer at Actech India since September 2025. I have hands-on experience from a
+            3-month internship as a Frontend Developer at Nexgen, where I worked on building responsive
+            and user-friendly interfaces. I&apos;m passionate about creating efficient web applications and
+            constantly enhancing my skills through practical projects. In my free time, I enjoy playing
+            video games like BGMI. Let&apos;s connect and build something impactful together.
           </motion.p>
         </div>
         <motion.div

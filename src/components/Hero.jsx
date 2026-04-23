@@ -39,9 +39,11 @@ function Hero() {
           animate="show"
           className="mt-4 max-w-xl text-zinc-300 lg:mt-5"
         >
-          Hi, I am Harsh Dagar, a Full Stack Developer specializing in the MERN stack.
-          I completed my BCA from Trinity Institute of Professional Studies in 2025.
-          Currently, I am working as a Node.js Developer at Actech India.
+          Harsh Dagar, Full Stack Developer specializing in the MERN stack. I completed my BCA in 2025
+          from Trinity Institute of Professional Studies. Currently working as a Node.js Developer at
+          Actech India since September 2025. I have also completed a 3-month internship as a Frontend
+          Developer at Nexgen. I enjoy building scalable web applications and continuously improving my
+          development skills through real-world projects.
         </motion.p>
         <motion.div
           variants={container(0.24)}

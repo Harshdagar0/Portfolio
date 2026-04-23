@@ -6,27 +6,53 @@ const itemTransition = { duration: 0.45, delay: 0.1 };
 
 const experiences = [
   {
+    duration: "Sep 2025 - Present",
+    location: "New Delhi",
+    role: "Backend Developer - Acetech Information Systems Pvt. Ltd",
+    points: [
+      "Worked on a microservices-based ESL project and maintained scalable backend services.",
+      "Designed and implemented IAM with secure authentication and RBAC authorization.",
+      "Integrated Apache Kafka for event-driven communication and built background workers and schedulers.",
+      "Implemented Redis-based session management and improved performance using caching strategies.",
+    ],
+    tags: ["Node.js", "Express.js", "Microservices", "IAM", "RBAC", "Kafka", "Redis"],
+    tagClass: "border-sky-300/40 bg-sky-400/10 text-sky-200",
+  },
+  {
     duration: "Jun 2025 - Aug 2025",
-    role: "Front-end Developer (Intern) - NexGen Innovators",
-    description:
-      "Worked on WordPress and Shopify projects by creating pages, sections, and reusable blocks. Also performed MS, VT, and SPU testing and deployed projects using Hostinger.",
-    tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "WordPress", "Shopify"],
+    location: "New Delhi",
+    role: "Front-end Developer - NexGen Innovators IT Services Pvt Ltd",
+    points: [
+      "Worked on WordPress and Shopify projects by creating custom sections and reusable blocks.",
+      "Used WordPress plugins to improve features and overall site performance.",
+      "Performed MS, VT, and SPU testing to ensure functionality and quality.",
+      "Managed deployment and hosting tasks using Hostinger services.",
+    ],
+    tags: ["WordPress", "Shopify", "HTML", "CSS", "JavaScript", "Bootstrap"],
     tagClass: "border-emerald-300/40 bg-emerald-400/10 text-emerald-200",
   },
   {
-    duration: "Jan 2025 - Feb 2025",
-    role: "Front-end Developer (Intern) - Codynest Technologies",
-    description:
-      "Built landing panels in React with Tailwind CSS and implemented authentication flows including login, signup, reset password, route protection, and user account management features.",
-    tags: ["React.js", "Tailwind CSS", "JavaScript"],
+    duration: "Jan 2025 - Mar 2025",
+    location: "New Delhi",
+    role: "Front-end Developer Intern - CodyNest Technologies",
+    points: [
+      "Built landing panels in React and styled interfaces using Tailwind CSS.",
+      "Implemented login, signup, reset password, and route protection flows.",
+      "Developed account settings, deletion, restoration, and user activation or deactivation features.",
+    ],
+    tags: ["React.js", "Tailwind CSS", "JavaScript", "Authentication"],
     tagClass: "border-orange-300/40 bg-orange-400/10 text-orange-200",
   },
   {
-    duration: "June 2024 - July 2024",
-    role: "Front-end Developer (Intern) - Go Business India",
-    description:
-      "Worked on three projects including a client project and two clones (Myntra and MakeMyTrip), focusing on frontend UI implementation and responsive layouts.",
-    tags: ["HTML", "CSS", "JavaScript"],
+    duration: "Jun 2024 - Jul 2024",
+    location: "Uttam Nagar",
+    role: "Front-end Developer Intern - Go Business India",
+    points: [
+      "Contributed to three projects including one client project.",
+      "Built e-commerce clones inspired by Myntra and MakeMyTrip.",
+      "Focused on responsive UI implementation and frontend delivery.",
+    ],
+    tags: ["HTML", "CSS", "JavaScript", "Frontend"],
     tagClass: "border-cyan-300/40 bg-cyan-400/10 text-cyan-200",
   },
 ];
@@ -54,7 +80,8 @@ function Experience() {
               transition={{ ...itemTransition, delay: 0.08 + index * 0.04 }}
               className='pb-2 text-center text-zinc-400 lg:w-1/3 lg:pt-1'
             >
-              {experience.duration}
+              <p>{experience.duration}</p>
+              <p className='mt-1 text-sm text-zinc-500'>{experience.location}</p>
             </motion.div>
             <div className='lg:w-2/3'>
               <motion.h2
@@ -66,15 +93,17 @@ function Experience() {
               >
                 {experience.role}
               </motion.h2>
-              <motion.p
+              <motion.ul
                 initial={{ x: 20, opacity: 0 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={view}
                 transition={{ duration: 0.45, delay: 0.12 + index * 0.04 }}
-                className='mb-3 mt-2 text-center text-zinc-400 lg:text-left'
+                className='mb-3 mt-3 list-disc space-y-2 pl-5 text-zinc-400 lg:text-left'
               >
-                {experience.description}
-              </motion.p>
+                {experience.points.map((point) => (
+                  <li key={point}>{point}</li>
+                ))}
+              </motion.ul>
               <motion.div
                 initial={{ y: 8, opacity: 0 }}
                 whileInView={{ opacity: 1, y: 0 }}
