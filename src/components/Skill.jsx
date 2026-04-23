@@ -1,87 +1,83 @@
 import React from 'react';
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa6";
-import { FaNodeJs } from "react-icons/fa6";
-import { FaReact } from "react-icons/fa";
-import { FaBootstrap } from "react-icons/fa";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { SiExpress } from "react-icons/si";
-import { DiNodejs } from "react-icons/di";
-import { SiMysql } from "react-icons/si";
-import { SiMongodb } from "react-icons/si";
-import { motion } from "motion/react"
+import { motion } from "motion/react";
+
+const sectionTransition = { duration: 0.4, delay: 0.08 };
+const rowTransition = { duration: 0.45, delay: 0.1 };
+const view = { once: true, amount: 0.2 };
+
+const skillGroups = [
+  {
+    title: "Programming Languages",
+    items: ["C", "JavaScript"],
+  },
+  {
+    title: "Frontend",
+    items: ["React.js", "HTML", "CSS", "Bootstrap", "Tailwind CSS", "Redux Toolkit", "WordPress", "Shopify"],
+  },
+  {
+    title: "Backend",
+    items: ["Node.js", "Express.js", "Sequelize (ORM)", "REST APIs", "Microservices Architecture", "IAM", "RBAC"],
+  },
+  {
+    title: "Database",
+    items: ["MySQL", "MongoDB", "Redis"],
+  },
+  {
+    title: "Tools & Platforms",
+    items: ["Postman", "Thunder Client", "NPM", "Render", "Vercel", "GitHub"],
+  },
+  {
+    title: "Message Broker",
+    items: ["Apache Kafka"],
+  },
+];
 
 function Skill() {
-    return (
-        <div className=' my-10 lg:px-80 px-10'>
-            <motion.h1 
-             initial={{y:-20,opacity:0}}
-             whileInView={{opacity:1,y:0}}
-             transition={{duration:0.5,delay:0.5}}
-            className='text-4xl text-center'>Technologies</motion.h1>
-            <div className='text-2xl lg:flex my-10'>
-                <motion.h2 
-                initial={{x:-20,opacity:0}}
-                whileInView={{opacity:1,x:0}}
-                transition={{duration:1,delay:1}}
-                className='font-thin text-center mb-4'>Frontend</motion.h2>
-                <motion.div 
-                initial={{x:20,opacity:0}}
-                whileInView={{opacity:1,x:0}}
-                transition={{duration:1,delay:1.1}}
-                className=' lg:w-2/3 lg:ms-20 flex mx-10   justify-between  text-center'>
-                    <FaHtml5   />
-                    <FaCss3Alt   />
-                    <FaNodeJs />
-                    <FaReact />
-                    <FaBootstrap />
-                    <RiTailwindCssFill />
-                </motion.div>
-            </div>
-            <motion.hr
-            initial={{y:-10,opacity:0}}
-            whileInView={{opacity:1,y:0}}
-            transition={{duration:1,delay:0.3}}
-            ></motion.hr>
-            <div className='text-2xl lg:flex my-10'>
-                <motion.h2
-                initial={{x:-20,opacity:0}}
-                whileInView={{opacity:1,x:0}}
-                transition={{duration:1,delay:1}}
-                className='font-thin text-center  '>Backend</motion.h2>
-                <motion.span
-                initial={{x:20,opacity:0}}
-                whileInView={{opacity:1,x:0}}
-                transition={{duration:1,delay:1.1}}
-                className='lg:w-1/3 lg:ms-20 mx-10 flex justify-around '>
-                    <SiExpress className='mt-4 ' />
-                    <DiNodejs className='text-6xl ' />
-                </motion.span>
-            </div>
-            <motion.hr
-            initial={{y:-10,opacity:0}}
-            whileInView={{opacity:1,y:0}}
-            transition={{duration:1,delay:0.3}}
-            ></motion.hr>
+  return (
+    <div className='my-14 rounded-2xl border border-zinc-800/70 bg-zinc-900/40 px-6 py-10 lg:px-10'>
+      <motion.h1
+        initial={{ y: -20, opacity: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={view}
+        transition={sectionTransition}
+        className='text-center text-4xl'
+      >
+        Skillsets
+      </motion.h1>
 
-            <div className='text-2xl lg:flex my-10'>
-                <motion.h2
-                initial={{x:-20,opacity:0}}
-                whileInView={{opacity:1,x:0}}
-                transition={{duration:1,delay:1}}
-                className='font-thin text-center mb-4'>Database</motion.h2>
-                <motion.span
-                initial={{x:20,opacity:0}}
-                whileInView={{opacity:1,x:0}}
-                transition={{duration:1,delay:1.1}}
-                className='lg:w-1/3 lg:ms-20 mx-10 flex justify-around '>
-                <SiMysql className='text-4xl  ' />
-                <SiMongodb className='mt-2  ' />   
-                </motion.span>
-            </div>
-
-        </div>
-    );
+      <div className='mt-10 space-y-6'>
+        {skillGroups.map((group, index) => (
+          <div key={group.title} className='rounded-xl border border-zinc-800 bg-zinc-900/60 p-5 lg:flex lg:items-start'>
+            <motion.h2
+              initial={{ x: -20, opacity: 0 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={view}
+              transition={{ ...rowTransition, delay: 0.08 + index * 0.03 }}
+              className='mb-4 text-center text-xl font-medium text-cyan-200 lg:mb-0 lg:w-1/3 lg:text-left'
+            >
+              {group.title}
+            </motion.h2>
+            <motion.div
+              initial={{ x: 20, opacity: 0 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={view}
+              transition={{ duration: 0.45, delay: 0.12 + index * 0.03 }}
+              className='flex flex-wrap gap-2 lg:w-2/3'
+            >
+              {group.items.map((item) => (
+                <span
+                  key={item}
+                  className='rounded-full border border-zinc-700 bg-zinc-950 px-3 py-1 text-sm text-zinc-300'
+                >
+                  {item}
+                </span>
+              ))}
+            </motion.div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default Skill;

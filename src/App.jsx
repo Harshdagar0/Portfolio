@@ -5,32 +5,30 @@ import Navbar from "./components/Navbar"
 import Project from "./components/Project"
 import Skill from "./components/Skill"
 import Contact from "./components/Contact"
-import { motion } from "motion/react"
 
 export default function App() {
   return (
-    <div className="text-white">
-      <div className="fixed top-0 -z-10 h-full w-full">
-        <div className=" absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
-
+    <div className="min-h-screen text-zinc-100 bg-zinc-950">
+      <div className="fixed inset-0 -z-10 overflow-hidden">
+        <div className="absolute -top-44 left-1/3 h-96 w-96 rounded-full bg-cyan-400/10 blur-3xl"></div>
+        <div className="absolute bottom-10 -right-20 h-80 w-80 rounded-full bg-orange-400/10 blur-3xl"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(56,189,248,0.12),transparent_45%),radial-gradient(circle_at_bottom,rgba(251,146,60,0.12),transparent_35%)]"></div>
       </div>
-      <div className=" overflow-hidden">
+      <div className="mx-auto max-w-6xl overflow-hidden px-4 lg:px-6">
         <Navbar />
-        <Hero  animate={{ rotate: 360 }}/>
-        <hr className="opacity-20"></hr>
+        <Hero />
+        <hr className="border-zinc-800/70"></hr>
         <About />
-        <hr className="opacity-20"></hr>
+        <hr className="border-zinc-800/70"></hr>
         <Skill />
-        <hr className="opacity-20"></hr>
+        <hr className="border-zinc-800/70"></hr>
         <Experience />
-        <hr className="opacity-20"></hr>
+        <hr className="border-zinc-800/70"></hr>
         <Project />
-        <hr className="opacity-20"></hr>
+        <hr className="border-zinc-800/70"></hr>
         <Contact />
-        <hr className="opacity-20"></hr>
+        <hr className="border-zinc-800/70"></hr>
       </div>
-
-
     </div>
   )
 }

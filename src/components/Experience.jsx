@@ -1,113 +1,131 @@
 import React from 'react';
 import { motion } from "motion/react";
 
+const view = { once: true, amount: 0.2 };
+const itemTransition = { duration: 0.45, delay: 0.1 };
+
+const experiences = [
+  {
+    duration: "Sep 2025 - Present",
+    location: "New Delhi",
+    role: "Backend Developer - Acetech Information Systems Pvt. Ltd",
+    points: [
+      "Worked on a microservices-based ESL project and maintained scalable backend services.",
+      "Designed and implemented IAM with secure authentication and RBAC authorization.",
+      "Integrated Apache Kafka for event-driven communication and built background workers and schedulers.",
+      "Implemented Redis-based session management and improved performance using caching strategies.",
+    ],
+    tags: ["Node.js", "Express.js", "Microservices", "IAM", "RBAC", "Kafka", "Redis"],
+    tagClass: "border-sky-300/40 bg-sky-400/10 text-sky-200",
+  },
+  {
+    duration: "Jun 2025 - Aug 2025",
+    location: "New Delhi",
+    role: "Front-end Developer - NexGen Innovators IT Services Pvt Ltd",
+    points: [
+      "Worked on WordPress and Shopify projects by creating custom sections and reusable blocks.",
+      "Used WordPress plugins to improve features and overall site performance.",
+      "Performed MS, VT, and SPU testing to ensure functionality and quality.",
+      "Managed deployment and hosting tasks using Hostinger services.",
+    ],
+    tags: ["WordPress", "Shopify", "HTML", "CSS", "JavaScript", "Bootstrap"],
+    tagClass: "border-emerald-300/40 bg-emerald-400/10 text-emerald-200",
+  },
+  {
+    duration: "Jan 2025 - Mar 2025",
+    location: "New Delhi",
+    role: "Front-end Developer Intern - CodyNest Technologies",
+    points: [
+      "Built landing panels in React and styled interfaces using Tailwind CSS.",
+      "Implemented login, signup, reset password, and route protection flows.",
+      "Developed account settings, deletion, restoration, and user activation or deactivation features.",
+    ],
+    tags: ["React.js", "Tailwind CSS", "JavaScript", "Authentication"],
+    tagClass: "border-orange-300/40 bg-orange-400/10 text-orange-200",
+  },
+  {
+    duration: "Jun 2024 - Jul 2024",
+    location: "Uttam Nagar",
+    role: "Front-end Developer Intern - Go Business India",
+    points: [
+      "Contributed to three projects including one client project.",
+      "Built e-commerce clones inspired by Myntra and MakeMyTrip.",
+      "Focused on responsive UI implementation and frontend delivery.",
+    ],
+    tags: ["HTML", "CSS", "JavaScript", "Frontend"],
+    tagClass: "border-cyan-300/40 bg-cyan-400/10 text-cyan-200",
+  },
+];
+
 function Experience() {
-    return (
-        <div className='my-20 '>
-            <motion.h1 
-            initial={{y:-10,opacity:0}}
-            whileInView={{opacity:1,y:0}}
-            transition={{duration:0.5,delay:0.3}}
-             className='text-4xl text-center mb-10'>Experience</motion.h1>
-          
-            <div className='lg:flex mt-10'>
-                <motion.div
-                initial={{x:-20,opacity:0}}
-                whileInView={{opacity:1,x:0}}
-                transition={{duration:1,delay:0.6}}
-                className='lg:w-1/2 text-center pt-4 pb-2'>
-                    Jun 2025 - Aug 2025
-                </motion.div>
-                <div className='lg:w-1/2 lg:pe-20 '>
-                    <motion.h1 
-                      initial={{x:20,opacity:0}}
-                      whileInView={{opacity:1,x:0}}
-                      transition={{duration:1,delay:0.6}}
-                     className='lg:text-xl text-center lg:text-start'>Front-end Developer(Intern) - NexGen Innovators </motion.h1>
-                    <motion.p 
-                     initial={{x:20,opacity:0}}
-                     whileInView={{opacity:1,x:0}}
-                     transition={{duration:1,delay:0.6}}                    
-                     className='text-slate-400 px-4 lg:px-0 text-center lg:text-start mb-3'>I have worked on several projects in my NextGen internship related to WordPress and Shopify. In WordPress, I created new pages, used several plugins . In Shopify, I created sections and blocks, added products, and performed MS, VT, and SPU testing on WordPress projects. I also deployed some projects with the help of Hostinger.</motion.p>
-                          <motion.div
-                     initial={{y:10,opacity:0}}
-                     whileInView={{opacity:1,y:0}}
-                     transition={{duration:1,delay:0.6}}
-                      className='text-center lg:text-start pt-4'>
-                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>HTML</span>
-                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>CSS</span>
-                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>JS</span><br></br><br></br>
-                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>Bootstrap</span>
-                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>Wordpess</span>
-                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>Shopify</span>
-                    </motion.div>
-                </div>
+  return (
+    <div className='my-16 rounded-2xl border border-zinc-800/70 bg-zinc-900/40 px-6 py-10 lg:px-10'>
+      <motion.h1
+        initial={{ y: -10, opacity: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={view}
+        transition={{ duration: 0.35, delay: 0.05 }}
+        className='mb-10 text-center text-4xl'
+      >
+        Experience
+      </motion.h1>
+
+      <div className='space-y-8'>
+        {experiences.map((experience, index) => (
+          <div key={experience.role} className='rounded-xl border border-zinc-800 bg-zinc-900/60 p-5 lg:flex'>
+            <motion.div
+              initial={{ x: -20, opacity: 0 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={view}
+              transition={{ ...itemTransition, delay: 0.08 + index * 0.04 }}
+              className='pb-2 text-center text-zinc-400 lg:w-1/3 lg:pt-1'
+            >
+              <p>{experience.duration}</p>
+              <p className='mt-1 text-sm text-zinc-500'>{experience.location}</p>
+            </motion.div>
+            <div className='lg:w-2/3'>
+              <motion.h2
+                initial={{ x: 20, opacity: 0 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={view}
+                transition={{ ...itemTransition, delay: 0.1 + index * 0.04 }}
+                className='text-center text-xl lg:text-left'
+              >
+                {experience.role}
+              </motion.h2>
+              <motion.ul
+                initial={{ x: 20, opacity: 0 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={view}
+                transition={{ duration: 0.45, delay: 0.12 + index * 0.04 }}
+                className='mb-3 mt-3 list-disc space-y-2 pl-5 text-zinc-400 lg:text-left'
+              >
+                {experience.points.map((point) => (
+                  <li key={point}>{point}</li>
+                ))}
+              </motion.ul>
+              <motion.div
+                initial={{ y: 8, opacity: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={view}
+                transition={{ duration: 0.4, delay: 0.14 + index * 0.04 }}
+                className='flex flex-wrap justify-center gap-2 lg:justify-start'
+              >
+                {experience.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className={`rounded-full border px-3 py-1 text-sm ${experience.tagClass}`}
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </motion.div>
             </div>
-            <div className='lg:flex mt-10'>
-                <motion.div
-                initial={{x:-20,opacity:0}}
-                whileInView={{opacity:1,x:0}}
-                transition={{duration:1,delay:0.6}}
-                className='lg:w-1/2 text-center pt-4 pb-2'>
-                    Jan 2025 - Feb 2025
-                </motion.div>
-                <div className='lg:w-1/2 lg:pe-20 '>
-                    <motion.h1 
-                      initial={{x:20,opacity:0}}
-                      whileInView={{opacity:1,x:0}}
-                      transition={{duration:1,delay:0.6}}
-                     className='lg:text-xl text-center lg:text-start'>Front-end Developer(Intern)  -CODYNEST TECHNOLOGIES</motion.h1>
-                    <motion.p 
-                     initial={{x:20,opacity:0}}
-                     whileInView={{opacity:1,x:0}}
-                     transition={{duration:1,delay:0.6}}
-                    
-                     className='text-slate-400 px-4 lg:px-0 text-center lg:text-start mb-3'>My front-end internship at Codynest provided me with valuable hands-on experience in developing user interfaces with React and styling them effectively with Tailwind CSS. I successfully built the landing panel for their website and implemented a comprehensive set of user authentication features, including login, signup, and reset password flows. I also developed key user management functionalities such as account settings, account deletion, account restoration, and user activation/deactivation.I also gained experience in securing the application by implementing route protection</motion.p>
-                    <motion.div
-                     initial={{y:10,opacity:0}}
-                     whileInView={{opacity:1,y:0}}
-                     transition={{duration:1,delay:0.6}}
-                      className='text-center lg:text-start pt-4'>
-                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>React.js</span>
-                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>Tailwind CSS</span><br></br><br></br>
-                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>Javascript</span>
-                    </motion.div>
-                </div>
-            </div>
-              <div className='lg:flex mt-10'>
-                <motion.div
-                initial={{x:-20,opacity:0}}
-                whileInView={{opacity:1,x:0}}
-                transition={{duration:1,delay:0.6}}
-                className='lg:w-1/2 text-center pt-4 pb-2'>
-                    June 2024 - July 2024
-                </motion.div>
-                <div className='lg:w-1/2 lg:pe-20 '>
-                    <motion.h1 
-                      initial={{x:20,opacity:0}}
-                      whileInView={{opacity:1,x:0}}
-                      transition={{duration:1,delay:0.6}}
-                     className='lg:text-xl text-center lg:text-start'>Front-end Developer(Intern)  -GO BUSINESS INDIA</motion.h1>
-                    <motion.p 
-                     initial={{x:20,opacity:0}}
-                     whileInView={{opacity:1,x:0}}
-                     transition={{duration:1,delay:0.6}}
-                    
-                     className='text-slate-400 px-4 lg:px-0 text-center lg:text-start mb-3'>In Go business india, I worked on 3 projects, one was their
-                      client's project and other two was clone of Myntra and MakeMyTrip</motion.p>
-                    <motion.div
-                     initial={{y:10,opacity:0}}
-                     whileInView={{opacity:1,y:0}}
-                     transition={{duration:1,delay:0.6}}
-                      className='text-center lg:text-start pt-4'>
-                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>HTML</span>
-                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>CSS</span>
-                        <span className='border py-1 px-2 rounded text-white bg-neutral-900 mx-2 '>Javascript</span>
-                    </motion.div>
-                </div>
-            </div>
-        </div>
-    );
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default Experience;
