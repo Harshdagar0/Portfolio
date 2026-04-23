@@ -2,6 +2,7 @@ import React from 'react'
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
+import { PiReadCvLogoFill } from "react-icons/pi";
 
 const Navbar = () => {
   return (
@@ -36,6 +37,15 @@ const Navbar = () => {
           >
             <FaInstagram />
           </a>
+          <a
+            className='rounded-lg border border-transparent p-2 transition duration-200 hover:-translate-y-0.5 hover:border-zinc-700 hover:bg-zinc-800/80'
+            href='/Harsh_Resume.pdf'
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Resume"
+          >
+            <PiReadCvLogoFill />
+          </a>
         </div>
       </div>
     </div>
@@ -43,6 +53,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-
-
-
