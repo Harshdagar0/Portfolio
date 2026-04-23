@@ -4,47 +4,53 @@ import { useForm, ValidationError } from '@formspree/react';
 function ContactForm() {
   const [state, handleSubmit] = useForm("xgvvpvyg");
   if (state.succeeded) {
-      return <p className='text-xl'>Thanks for Feedback!</p>;
+    return <p className='text-lg text-cyan-200'>Thanks for your feedback!</p>;
   }
+
   return (
-    <form className='text-gray' onSubmit={handleSubmit}>
-        <input 
-        className='bg-transparent  border-b   my-2'
-        type='text'
-        placeholder='Name' 
-        required>
-        </input><br></br>
-      
+    <form className='space-y-4' onSubmit={handleSubmit}>
       <input
-        className='bg-transparent  border-b  my-2'
+        className='w-full rounded-lg border border-zinc-700 bg-zinc-950/70 px-3 py-2 outline-none transition focus:border-cyan-300'
+        type='text'
+        name='name'
+        placeholder='Name'
+        required
+      />
+
+      <input
+        className='w-full rounded-lg border border-zinc-700 bg-zinc-950/70 px-3 py-2 outline-none transition focus:border-cyan-300'
         placeholder='Email'
         id="email"
-        type="email" 
+        type="email"
         name="email"
-      /><br></br>
+        required
+      />
       <ValidationError
-        className='text-red' 
-        prefix="Email" 
+        className='text-sm text-red-400'
+        prefix="Email"
         field="email"
         errors={state.errors}
-      /><br></br>
+      />
+
       <textarea
-        className='bg-transparent  border-b my-2 w-full h-32 h-20' 
-        placeholder="Question, request assistance, or give feedback on your experience "
+        className='h-28 w-full rounded-lg border border-zinc-700 bg-zinc-950/70 px-3 py-2 outline-none transition focus:border-cyan-300'
+        placeholder="Question, request assistance, or share feedback"
         id="message"
         name="message"
-      /><br></br>
-      <ValidationError 
-        className='text-red' 
-
-        prefix="Message" 
+        required
+      />
+      <ValidationError
+        className='text-sm text-red-400'
+        prefix="Message"
         field="message"
         errors={state.errors}
       />
-      <button 
-      className='border py-1 px-2 rounded'
-      type="submit" 
-      disabled={state.submitting}>
+
+      <button
+        className='rounded-lg bg-cyan-300 px-4 py-2 font-medium text-zinc-900 transition hover:bg-cyan-200 disabled:cursor-not-allowed disabled:opacity-70'
+        type="submit"
+        disabled={state.submitting}
+      >
         Submit
       </button>
     </form>

@@ -1,47 +1,51 @@
 import React from 'react';
 import { motion } from "motion/react";
 
-
 function About() {
-    return (
-        <div className=' mb-10 mt-20 px-7'>
-            <motion.h1 
-            initial={{y:-20,opacity:0}}
-            whileInView={{opacity:1,y:0}}
-            transition={{duration:0.5,delay:0.3}}
-            className='text-center  text-4xl'>About <span className='text-slate-400'>Me</span></motion.h1>
-            <div className='lg:flex mt-5'>
-                <div className='lg:w-1/2 px-5 lg:py-14'>
-                    <motion.p
-                      initial={{x:-20,opacity:0}}
-                      whileInView={{opacity:1,x:0}}
-                      transition={{duration:1,delay:0.6}}>
-                        Hi, I am Harsh Dagar. I am specialize in MERN stack and have good knowledge of other programming
-                        languages ​​like c++,JS. I am pursuing BCA from Trinity Institute of Professional Studies. I have
-                        worked as a frontend intern at Business India Company.I love playing video games like BGMI.
-                        Let's connect and create something extraordinary together feel free to check out my portfolio or get in touch!
-                    </motion.p>
-                </div>
-                <motion.div
-                  initial={{x:20,opacity:0}}
-                  whileInView={{opacity:1,x:0}}
-                  transition={{duration:1,delay:0.6}}
-                className='px-5'>
-                  <h2 className='text-center mx-auto text-2xl mt-2'>Education</h2>
-                   <h3 className=' mt-1'>Bachelor of Computer Applications</h3>
-                   <span className='font-thin'>Trinity Institute of Professional Studies  -Sector 9, Dwarka,New Delhi, Delhi 110075  -2025</span>
-                   <h3 className=' mt-1'>Diploma in Computer Applications</h3>
-                   <span className='font-thin'>Gro Tech Learn Foundation  -Najafgarh, New Delhi, Delhi, 110043  -2022</span>
-                   <h3 className=' mt-1'>10<sup>th</sup> and 12<sup>th</sup></h3>
-                   <span className='font-thin'> Navyug Convent Sr. Sec. School  -Sainik Enclave 2, Najafgarh, Delhi, 110072  -2021</span>
-
-                </motion.div>
-            </div>
-
-
-
+  return (
+    <div className='mb-14 mt-14 rounded-2xl border border-zinc-800/70 bg-zinc-900/40 px-6 py-10 lg:mt-20 lg:px-10'>
+      <motion.h1
+        initial={{ y: -20, opacity: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.35, delay: 0.06 }}
+        className='text-center text-4xl'
+      >
+        About <span className='text-zinc-400'>Me</span>
+      </motion.h1>
+      <div className='mt-8 lg:flex lg:items-start lg:gap-8'>
+        <div className='lg:w-1/2 lg:py-2'>
+          <motion.p
+            initial={{ x: -20, opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.45, delay: 0.1 }}
+            className='leading-7 text-zinc-300'
+          >
+            Hi, I am Harsh Dagar. I specialize in the MERN stack and also have knowledge of other programming
+            languages like C++ and JavaScript. I am pursuing BCA from Trinity Institute of Professional Studies.
+            I have worked as a frontend intern at Go Business India. I love playing video games like BGMI.
+            Let&apos;s connect and create something extraordinary together.
+          </motion.p>
         </div>
-    );
+        <motion.div
+          initial={{ x: 20, opacity: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.45, delay: 0.12 }}
+          className='mt-8 rounded-xl border border-zinc-800 bg-zinc-900/70 p-5 lg:mt-0 lg:w-1/2'
+        >
+          <h2 className='text-center text-2xl'>Education</h2>
+          <h3 className='mt-4 font-medium'>Bachelor of Computer Applications</h3>
+          <p className='font-thin text-zinc-400'>Trinity Institute of Professional Studies, Dwarka, New Delhi - 2025</p>
+          <h3 className='mt-4 font-medium'>Diploma in Computer Applications</h3>
+          <p className='font-thin text-zinc-400'>Gro Tech Learn Foundation, Najafgarh, New Delhi - 2022</p>
+          <h3 className='mt-4 font-medium'>10th and 12th</h3>
+          <p className='font-thin text-zinc-400'>Navyug Convent Sr. Sec. School, Najafgarh, Delhi - 2021</p>
+        </motion.div>
+      </div>
+    </div>
+  );
 }
 
 export default About;
